@@ -1,0 +1,362 @@
+:root{
+        /* Define your color variables*/
+        --primary: #000060;
+        --secondary: #c0c0c0;
+        --third: #ffffff;
+        --dark: #333;
+        --light: #eee;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--light);
+    margin:0;
+}
+.bg-dark{
+    background-color: var(--dark);
+ }
+ .bg-light{
+     background-color: var(--light);
+ }
+ .bg-primary{
+     background-color: var(--primary);
+ }
+ .bg-secondary{
+     background-color: var(--secondary);
+ }
+ .bg-third{
+     background-color: var(--third);
+ }
+ .text-dark{
+     background-color: var(--dark);
+ }
+ .text-light{
+     color: var(--light);
+ }
+ .text-primary{
+     color: var(--primary);
+ }
+ .text-secondary{
+     color: var(--secondary)
+ }
+ .text-third{
+     color: var(--third)
+ }
+ .card  {
+    border-radius: 5px;
+    background-color: var(--light);
+    width: auto;
+    height: auto;
+    max-width: 33vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header, .footer{
+    display: flex;
+    background-color: var(--primary);
+    width: 100%;
+    height: 60px;
+    box-shadow: 1px 1px 5px #888888;
+}
+.header{
+    background-image: linear-gradient( to left,var(--secondary),#242b35, #242b35);
+    
+}
+.primary-container{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 100px;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/keystone-demo/image/upload/v1565129461/sucpd5njo7ukftgqpscc.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+.main-cont{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.secondary-cont{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.card-main{
+    display: flex;
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    overflow: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+.main-text{
+    text-align: justify;
+}
+p{
+   width: 100%;
+   margin: 1rem;
+   color: var(--light);
+}
+.btn{
+    background-color: #242b35;
+    color: var(--secondary);
+    border-radius: 75px;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    padding: 1vh;
+    font-size: 1.7vh;
+    margin: 2vh;
+    text-align: center;
+}
+.btn:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px #888888;
+    background-color: var(--third);
+    cursor: pointer;
+}
+.portfolio{
+    background-color: var(--third);
+    position: relative;
+}
+.img-round{
+    float: left;
+    border-radius: 90px;
+}
+.card-image{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--dark);
+    width: 95%;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.a{
+    color:black;
+    font-size: 5px;
+    text-align: left;
+    margin:0;
+}
+.footer{
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--light);
+}
+
+.head-item{
+    height: 100%;
+    color: var(--light);
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.head-item:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.shadow-light{
+    box-shadow: 1px 1px 5px #888888;
+}
+.shadow-heavy{
+    box-shadow: 5px 10px 8px #888888;
+}
+.flip-card{
+    transform-style: preserve-3d;
+    height: 350px;
+    min-width: 250px;
+    max-height:100%;
+    perspective: 600px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.flip-card .front{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.flip-card:hover .front{
+    transform: rotateX(-180deg);
+    
+}
+.flip-card .back{
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    
+}
+
+.flip-card:hover .back{
+    transform: rotateX(0deg);
+    
+}
+.details{
+    text-align: center;
+    margin: 0;
+    margin-top: 20%;
+    font-size: 24px;
+    color: #ffffff;
+}
+.resize{
+    height: 50px;
+    width: 50px;
+    background: #eeeeee;
+    color: #ffffff;
+    border-radius: 90px;
+}
+.resize:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+ul{
+    text-align: left;
+    list-style: none;
+}
+li{
+    margin-left: 20px;
+    color: white;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.gray-text{
+    color: #a7a7a7;
+    font-size: 16px;
+    margin: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    margin: 15px;
+    color: #242b35;
+}
+.img-size{
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+.contact-container{
+    margin-top: 75px;
+    width: 50%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.black{
+    color: black;
+    text-align: justify;
+}
+.hover{
+    cursor: pointer;
+}
+.download{
+    background-color:#242b35;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    display: inline-block;
+    margin: 2vh;
+    margin-top: 0px;
+}
+.popup{
+    opacity: 0;
+    position: absolute;
+    max-width: 100%;
+    height: 85%;
+    top: 0;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8));
+}
+.popup p{
+    color: white;
+    margin: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 25%;
+}
+.popup:hover{
+    opacity: 1;
+}
+@media only screen and (max-width: 900px){
+    .card-main{
+        width: 100%;
+        max-width: 95%;
+    }
+    .main-cont{
+        width: 100%;
+    }
+    .secondary-cont{
+        flex-direction: column;
+        width: 95%;
+    }
+    .card{
+       
+        max-width: 100%
+    }
+    .primary-container{
+        padding:0;
+    }
+    .flip-card{
+     display: none;
+    }
+    .btn{
+        font-size: 2vh;
+        padding: 2vh;
+    }
+}
+@media only screen and (max-height: 500px){
+    .flip-card{
+        min-height: 250px;
+        width: 175px;
+    }
+}
