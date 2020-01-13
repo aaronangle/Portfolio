@@ -340,6 +340,12 @@ h2{
 .popup:hover{
     opacity: 1;
 }
+@media only screen and (max-width: 1000px){
+    .secondary-cont{
+        flex-direction: column;
+        width: 95%;
+    }
+}
 @media only screen and (max-width: 900px){
     .card-main{
         width: 100%;
@@ -347,10 +353,6 @@ h2{
     }
     .main-cont{
         width: 100%;
-    }
-    .secondary-cont{
-        flex-direction: column;
-        width: 95%;
     }
     .contact-container{
         width: 95%;
