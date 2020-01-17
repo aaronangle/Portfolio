@@ -185,6 +185,10 @@ a{
     border-radius: 5px;
     margin-right: 5px;
 }
+.center{
+    text-align: center;
+    margin: 10px;
+}
 .head-item:hover{
     font-weight: 900;
     cursor: pointer;
@@ -339,6 +343,10 @@ h2{
 }
 .popup:hover{
     opacity: 1;
+}
+.contact{
+    margin: 0;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 1000px){
     .secondary-cont{
