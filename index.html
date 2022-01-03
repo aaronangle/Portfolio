@@ -1,120 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./img/Aaronlogo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./images/Aaronlogo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="media.css" />
     <title>Aaron Angle</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
-    <div class="header shadow-light bg-primary">
-        <div class="head-main">
-        </div>
-        <div class="head-item">
-            <a href="index.html">
-                <p class="head-item"> Home</p>
-            </a>
-        </div>
-        <div class="head-item">
-            <a href="portfolio.html">
-                <p>Portfolio</p>
-            </a>
-        </div>
-        <div class="head-item">
-            <a href="contact.html">
-                <p>Contact & Resume</p>
-            </a>
-        </div>
+  <body>
+    <div class="container container-1" id="home">
+      <img src="https://res.cloudinary.com/keystone-demo/image/upload/v1565129461/sucpd5njo7ukftgqpscc.jpg" alt="" class="background-img" />
+      <div class="main-text">
+        <h1>Aaron Angle</h1>
+        <h2>Full-Stack Developer</h2>
+        <p>
+          I enjoy working with CSS, JavaScript, React, Vue, MongoDB, SQL, Node, and a bunch of other stuff. You can check out my <a href="#portfolio">portfolio</a> below to view some of the projects
+          that I've worked on. Feel free to <a href="#contact">reach out</a> if you are interested in working together. I'm always looking for new things to work on and new opportunities.
+        </p>
+      </div>
+      <div class="type-div">
+        <p class="typeText"></p>
+      </div>
     </div>
-    <div class="container">
-        <div class="primary-container shadow-light">
-            <div class="main-cont">
-                <div class="flip-card">
-                    <div class="front">
-                        <img src="./img/profile-pic.jpg" alt="Personal Picture">
-                    </div>
-                    <div class="back">
-                        <div class="details">
-                            <h2>Aaron Angle<br><span class='gray-text'>Full Stack Web Developer</span></h2>
-                            <br>
-                            <ul class="gray-text">
-                                <li>MongoDB</li>
-                                <li>Express</li>
-                                <li>React</li>
-                                <li>Node</li>
-                                <li>JavaScript</li>
-                                <li>And More...</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="card-main">
-                    <p class="main-text">
-                        My name is Aaron Angle and I am a full stack web developer. I graduated from the University of
-                        Arizona with a
-                        Certificate for Full Stack Web Development. This is my personal website where
-                        you can find links to my GitHub, LinkedIn, resume, and my portfolio of projects that I have
-                        built. I am profecient in HTML, CSS, JavaScript, Node, Express, MongoDB, jQuery, Bootstrap, and
-                        React. I have a strong love of learning and I am willing and able to learn any and all
-                        programming languages necessary for the job. I have a deep passion for coding and I love to
-                        create new projects. I am always seeking to push my limits and to learn new things in this
-                        industry. Check out my portfolio, download my resume, and contact me if you are interested in
-                        hiring or working with me.
-                    </p>
-
-                </div>
+    <div class="container container-2" id="portfolio">
+      <div class="project-container">
+        <div class="project project-1">
+          <div class="side">
+            <h2>ConstructIT Pro</h2>
+            <p>
+              ConstructIT Pro is my personal project that I work on in my free time. It's a project management solution for construction companies. ConstructIT Pro has a lot of functionality. I've
+              been working on it for quite a while now. I even made an app for Google Play and the App Store. The site supports hundreds of users and dozens of daily active users. The code is stored
+              on a private repo but feel free to check out the site and app.
+            </p>
+            <a href="https://constructit.pro/index.html" target="_blank">
+              <p class="flex">
+                View the Site
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.constructitpro.myapp&hl=en_US&gl=US" target="_blank">
+              <p class="flex">
+                Google Play
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <a href="https://apps.apple.com/us/app/constructit-pro/id1535736407" target="_blank">
+              <p class="flex">
+                App Store
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <div class="tag-container">
+              <div class="tag"><p>Vue</p></div>
+              <div class="tag"><p>Node</p></div>
+              <div class="tag"><p>MongoDB</p></div>
+              <div class="tag"><p>SCSS</p></div>
+              <div class="tag"><p>AWS</p></div>
             </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/Constructit.JPG" alt="ConstructIT Pro" />
+          </div>
         </div>
-        <div class="secondary-cont">
-            <a href="https://github.com/aaronangle">
-                <div class="card">
-                    <img class="card-image" src="./img/github-logo.png" alt="git hub logo">
-                    <hr>
-                    <div class="button-holder">
-                        <button class="btn">
-                            Check out my Github
-                        </button>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/aaron-angle-260736194/">
-                <div class="card">
-                    <img class="card-image" src="./img/linkedin.png" alt="LinkedIn logo">
-                    <hr>
-                    <div class="button-holder">
-                        <button class="btn">
-                            Check out my LinkedIn
-                        </button>
-                    </div>
-                </div>
-            </a>
-            <a href="portfolio.html">
-                <div class="card">
-                    <img class="card-image" src="./img/curriculum.png" alt="Portfolio">
-                    <hr>
-                    <div class="button-holder">
-                        <button class="btn">
-                            Check out my Portfolio
-                        </button>
-                    </div>
-                </div>
-            </a>
+        <div class="project project-2">
+          <div class="side">
+            <h2>Gila Hank</h2>
+            <p>
+              Gila Hank is the student access portal for Eastern Arizona College students. Students can register for classes, view their schedules, apply for dorms, pay fees, apply for scholarships,
+              join clubs, and a lot more. Gila Hank has a ton of functionality and it was a pretty big project. I was the only front-end developer while we created Gila Hank. Unfortunatley you have to
+              login to access Gila Hank so most people can't view the site.
+            </p>
+            <div class="tag-container">
+              <div class="tag"><p>Vue</p></div>
+              <div class="tag"><p>SCSS</p></div>
+              <div class="tag"><p>Vuex</p></div>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/GilaHank.JPG" alt="Gila Hank" />
+          </div>
         </div>
-
+        <div class="project project-3">
+          <div class="side">
+            <h2>EAC Class Search</h2>
+            <p>
+              EAC Class Search provides students and prospective students the ability to search for classes offered at EAC. Students can also submit requests to have courses offered online or offered
+              at different times.
+            </p>
+            <a href="https://classsearch.eac.edu/" target="_blank">
+              <p class="flex">
+                View the Site
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <div class="tag-container">
+              <div class="tag"><p>React</p></div>
+              <div class="tag"><p>CSS</p></div>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/EACclassSearch.JPG" alt="EAC Class Search" />
+          </div>
+        </div>
+        <div class="project project-4">
+          <div class="side">
+            <h2>SouthEast Directional Drilling Dashboard</h2>
+            <p>
+              Dashboard for SouthEast Directional Drilling employee use. It handled employee information, scheduling, locations, and a lot of other stuff. I mainly worked on the front-end of this
+              site. Unfortunatley the code and site can only be viewed by people inside the organization.
+            </p>
+            <div class="tag-container">
+              <div class="tag"><p>React</p></div>
+              <div class="tag"><p>Redux</p></div>
+              <div class="tag"><p>CSS</p></div>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/sedd.png" alt="SEDD" />
+          </div>
+        </div>
+        <div class="project project-5">
+          <div class="side">
+            <h2>Sea Tab</h2>
+            <p>
+              I decided to try to put my coding skills to good use for this project. Sea Tab is a free chrome extension that shows a small advertisement everytime a new tab is opened. The money
+              generated from that ad is donated to charities that work on cleaning the ocean.
+            </p>
+            <a href="https://chrome.google.com/webstore/detail/sea-tab/bkiiomcjgmhfleealakhcdkgchnfkjib" target="_blank">
+              <p class="flex">
+                View the Extension
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <div class="tag-container">
+              <div class="tag"><p>HTML</p></div>
+              <div class="tag"><p>CSS</p></div>
+              <div class="tag"><p>JavaScript</p></div>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/SeaTab.JPG" alt="Sea Tab" />
+          </div>
+        </div>
+        <div class="project project-6">
+          <div class="side">
+            <h2>YouCritic</h2>
+            <p>
+              This was a class project I worked on with 2 other classmembers. We used Handlebars for templating on the front-end and we used Node and SQL with Squelize on the back-end. I mainly worked
+              on the back-end as well as implemented authentication for the site.
+            </p>
+            <a href="https://github.com/aaronangle/YouCritic" target="_blank">
+              <p class="flex">
+                View the Code
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+                  <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                </svg>
+              </p>
+            </a>
+            <div class="tag-container">
+              <div class="tag"><p>HTML</p></div>
+              <div class="tag"><p>CSS</p></div>
+              <div class="tag"><p>Handlebars</p></div>
+              <div class="tag"><p>SQL</p></div>
+              <div class="tag"><p>Node</p></div>
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="./images/searchpage.gif" alt="YouCritic" />
+          </div>
+        </div>
+      </div>
+      <div class="dot-container">
+        <div class="dot dot-1 selected-dot"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+        <div class="dot dot-5"></div>
+        <div class="dot dot-6"></div>
+      </div>
+      <div class="arrow prev-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #eeeeee">
+          <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+        </svg>
+      </div>
+      <div class="arrow next-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #eeeeee">
+          <path d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"></path>
+        </svg>
+      </div>
     </div>
-    <div class="footer">
-        <div>
-
-        </div>
+    <div class="container-3 container" id="contact">
+      <h2>Want to Connect?</h2>
+      <a href="https://github.com/aaronangle" target="_blank">
+        <p class="flex">
+          Check out my GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+            <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+          </svg>
+        </p>
+      </a>
+      <a href="https://www.linkedin.com/in/aaron-angle-260736194/" target="_blank">
+        <p class="flex">
+          Message me on LinkedIn
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: #eeeeee">
+            <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+          </svg>
+        </p>
+      </a>
     </div>
-    <script src="app.js">
-
-    </script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
