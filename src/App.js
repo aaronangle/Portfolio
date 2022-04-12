@@ -1,7 +1,15 @@
+import { Header } from 'components/Header';
+import { Portfolio } from 'components/Portfolio';
+import { Resume } from 'components/Resume';
+import { Contact } from 'components/Contact';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+      <Portfolio />
+      <Resume />
+      <Contact />
     </div>
   );
 }

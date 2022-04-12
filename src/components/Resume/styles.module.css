@@ -1,0 +1,57 @@
+.cont {
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+.card {
+  width: 70%;
+  min-width: 320px;
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.mb {
+  margin-bottom: 0;
+}
+.mt {
+  margin-top: 0;
+}
+.date {
+  font-size: 14px;
+}
+.row__more {
+  color: #1da1f2;
+  cursor: pointer;
+  display: flex;
+  border-bottom: solid 3px white;
+  width: 130px;
+  margin: auto;
+  transition: 0.3s;
+}
+.row__more:hover {
+  border-bottom-color: #1da1f2;
+}
+
+.row__svg {
+  fill: #1da1f2;
+}
+
+.badge__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #7f99aa;
+  padding-bottom: 10px;
+}
+.badge {
+  background-color: #1da1f2;
+  color: white;
+  padding: 5px;
+  margin: 0;
+  margin-right: 10px;
+  border-radius: 7px;
+}

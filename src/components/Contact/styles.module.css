@@ -1,0 +1,28 @@
+.cont {
+  background-image: url('https://res.cloudinary.com/keystone-demo/image/upload/v1565129461/sucpd5njo7ukftgqpscc.jpg');
+}
+
+.cont__overlay {
+  background-color: #07090bbb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 40px;
+  color: white;
+}
+
+.link {
+  display: flex;
+  color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.svg {
+  fill: white;
+}
