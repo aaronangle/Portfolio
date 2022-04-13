@@ -1,2 +1,2 @@
-# Portfolio
-This is the code for my personal portfolio, which you can view here: https://aaronangle.github.io/Portfolio/
+This is my personal portfolio
+You can view the site [here](https://aaronangle.github.io/Portfolio/)
