@@ -11,6 +11,17 @@
   flex-direction: column;
 }
 
+.box {
+  box-shadow: 5px 5px rgba(0, 54, 98, 0.4), 10px 10px rgba(0, 54, 98, 0.3), 15px 15px rgba(0, 54, 98, 0.2), 20px 20px rgba(0, 54, 98, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+  border: solid 2px rgba(0, 54, 98, 1);
+  padding: 15px;
+  background-color: #0f1216;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .heading {
   font-size: 40px;
   color: white;

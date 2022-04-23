@@ -1,0 +1,90 @@
+.cont {
+  padding-top: 20px;
+  position: relative;
+}
+.arrow__cont {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10px;
+  top: -40px;
+}
+.arrow {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-left: solid 2px white;
+  cursor: pointer;
+  background-color: #1da1f2;
+}
+.arrow__text {
+  color: white;
+  font-size: 10px;
+  margin: 0;
+}
+.cont__align {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.box {
+  background-color: white;
+  box-shadow: 5px 5px rgba(0, 54, 98, 0.4), 10px 10px rgba(0, 54, 98, 0.3), 15px 15px rgba(0, 54, 98, 0.2), 20px 20px rgba(0, 54, 98, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+  border: solid 2px rgba(0, 54, 98, 1);
+  max-width: 300px;
+  min-width: 250px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.box__link {
+  display: flex;
+  color: black;
+}
+
+.image__cont {
+  width: 60%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px rgba(0, 54, 98, 0.4), 10px 10px rgba(0, 54, 98, 0.3), 15px 15px rgba(0, 54, 98, 0.2), 20px 20px rgba(0, 54, 98, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+  border: solid 2px rgba(0, 54, 98, 1);
+  padding: 5px;
+}
+.image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.badge__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.badge {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 800px) {
+  .cont__align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    margin-bottom: 20px;
+    min-width: 90%;
+  }
+  .image__cont {
+    width: 90%;
+  }
+}

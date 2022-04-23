@@ -11,6 +11,8 @@
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 15px;
+  box-shadow: 5px 5px rgba(0, 54, 98, 0.4), 10px 10px rgba(0, 54, 98, 0.3), 15px 15px rgba(0, 54, 98, 0.2), 20px 20px rgba(0, 54, 98, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+  border: solid 2px rgba(0, 54, 98, 1);
 }
 
 .mb {
