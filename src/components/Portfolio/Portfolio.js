@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import styles from './styles.module.css';
 
 const portfolioItems = [
@@ -92,63 +93,85 @@ const portfolioItems = [
 
 export const Portfolio = () => {
   const [index, setIndex] = useState(0);
+  const [forward, setForward] = useState(true);
+
+  function next() {
+    setForward(true);
+    setIndex(i => (i === portfolioItems.length - 1 ? 0 : ++i));
+  }
+  function prev() {
+    setForward(false);
+    setIndex(i => (i === 0 ? portfolioItems.length - 1 : --i));
+  }
 
   return (
     <div className={styles.cont}>
       <div className={styles.arrow__cont}>
-        <div className={styles.arrow} onClick={() => setIndex(i => (i === 0 ? portfolioItems.length - 1 : --i))} title="View Previous Project">
+        <div className={styles.arrow} onClick={() => prev()} title="View Previous Project">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style={{ fill: 'white' }}>
             <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
           </svg>
           <p className={styles.arrow__text}>Prev</p>
         </div>
-        <div className={styles.arrow} onClick={() => setIndex(i => (i === portfolioItems.length - 1 ? 0 : ++i))} title="View Next Project">
+        <div className={styles.arrow} onClick={() => next()} title="View Next Project">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style={{ fill: 'white' }}>
             <path d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"></path>
           </svg>
           <p className={styles.arrow__text}>Next</p>
         </div>
       </div>
-      <div className={styles.cont__align}>
-        <div className={styles.box}>
-          <h2>{portfolioItems[index].name}</h2>
-          <p>{portfolioItems[index].details}</p>
-          {portfolioItems[index].repo ? (
-            <a href={portfolioItems[index].repo} className={styles.box__link}>
-              Repo
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
-              </svg>
-            </a>
-          ) : (
-            <p>This code is on a private repo</p>
-          )}
-          {portfolioItems[index].links.map((link, index) => {
-            return (
-              <div key={index}>
-                <a href={link.url} className={styles.box__link}>
-                  {link.title}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
-                  </svg>
-                </a>
+      <SwitchTransition mode="out-in">
+        <CSSTransition
+          key={index}
+          addEndListener={(node, done) => {
+            node.addEventListener('transitionend', done, false);
+          }}
+          classNames={forward ? 'fade' : 'fadeback'}
+        >
+          <div key={index}>
+            <div className={styles.cont__align}>
+              <div className={styles.box}>
+                <h2>{portfolioItems[index].name}</h2>
+                <p>{portfolioItems[index].details}</p>
+                {portfolioItems[index].repo ? (
+                  <a href={portfolioItems[index].repo} className={styles.box__link}>
+                    Repo
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                    </svg>
+                  </a>
+                ) : (
+                  <p>This code is on a private repo</p>
+                )}
+                {portfolioItems[index].links.map((link, index) => {
+                  return (
+                    <div key={index}>
+                      <a href={link.url} className={styles.box__link}>
+                        {link.title}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                          <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
-        <div className={styles.image__cont}>
-          <img src={portfolioItems[index].image} alt="" className={styles.image} />
-        </div>
-      </div>
-      <div className={styles.badge__row}>
-        {portfolioItems[index].tags.map((tag, index) => {
-          return (
-            <div key={index}>
-              <p className={styles.badge}>{tag}</p>
+              <div className={styles.image__cont}>
+                <img src={portfolioItems[index].image} alt="" className={styles.image} />
+              </div>
             </div>
-          );
-        })}
-      </div>
+            <div className={styles.badge__row}>
+              {portfolioItems[index].tags.map((tag, index) => {
+                return (
+                  <div key={index}>
+                    <p className={styles.badge}>{tag}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </CSSTransition>
+      </SwitchTransition>
     </div>
   );
 };
