@@ -3,8 +3,51 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fadeback-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fadeback-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fadeback-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fadeback-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fadeback-enter-active,
+.fadeback-exit-active {
+  transition: opacity 500ms, transform 500ms;
 }
