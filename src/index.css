@@ -51,3 +51,24 @@ code {
 .fadeback-exit-active {
   transition: opacity 500ms, transform 500ms;
 }
+
+.drop-enter {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.drop-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.drop-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.drop-exit-active {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.drop-enter-active,
+.drop-exit-active {
+  transition: opacity 500ms, transform 500ms;
+}
