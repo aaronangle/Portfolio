@@ -14,7 +14,7 @@ export const Resume = () => {
           <p className={styles.mt}>Eastern Arizona College · Full-time</p>
           <p className={styles.date}>March 2020 - Present</p>
           <SwitchTransition mode="out-in">
-            <CSSTransition key={show} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+            <CSSTransition key={show === 1} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
               {show === 1 ? (
                 <div className="">
                   <p>
@@ -46,7 +46,7 @@ export const Resume = () => {
           <p className={styles.mt}>Trilogy Education · Part-time</p>
           <p className={styles.date}>December 2021 - Present</p>
           <SwitchTransition mode="out-in">
-            <CSSTransition key={show} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+            <CSSTransition key={show === 2} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
               {show === 2 ? (
                 <div className="">
                   <p>
@@ -78,7 +78,7 @@ export const Resume = () => {
           <p className={styles.mt}>Southeast Directional Drilling · Full-time</p>
           <p className={styles.date}>December 2019 - March 2020</p>
           <SwitchTransition mode="out-in">
-            <CSSTransition key={show} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+            <CSSTransition key={show === 3} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
               {show === 3 ? (
                 <div className="">
                   <p>
