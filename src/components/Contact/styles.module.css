@@ -1,5 +1,7 @@
 .cont {
   background-image: url('https://res.cloudinary.com/keystone-demo/image/upload/v1565129461/sucpd5njo7ukftgqpscc.jpg');
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .cont__overlay {
