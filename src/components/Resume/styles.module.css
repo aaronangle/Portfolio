@@ -1,6 +1,7 @@
 .cont {
   background-color: #eee;
   padding: 10px 0;
+  padding-bottom: 0px;
 }
 
 .card {
@@ -56,4 +57,15 @@
   margin: 2px;
   margin-right: 10px;
   border-radius: 7px;
+}
+.top__svg {
+  position: relative;
+  top: 5px;
+  overflow: hidden;
+}
+
+.bottom__svg {
+  position: relative;
+  top: 5px;
+  overflow: hidden;
 }
