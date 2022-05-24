@@ -44,6 +44,32 @@ const portfolioItems = [
     tags: ['React', 'React Native', 'CSS', 'React Query'],
   },
   {
+    name: 'Automated Content Generator',
+    details:
+      'I created a script that when run scrapes memes from the internet and then compiles them into a video. The video is then posted to TikTok, Youtube, and Facebook. The best memes are also posted to Twitter. This was a really fun project and it gave me some good experience with reading documentation, working with the OAuth flow, and enterprise APIs. I would guess that about 95% of the entire process of getting the memes, making the videos, and posting the videos is completely automated. Youtube and Tiktok require manual verfication before videos can be posted, otherwise it would be 100% automated.',
+    repo: '',
+    image: require('../../assets/ContentGenerator.jpg'),
+    links: [
+      {
+        title: 'Youtube Channel',
+        url: 'https://www.youtube.com/channel/UCfZOEuFm_Xw_kZVLMAw2JzA/featured',
+      },
+      {
+        title: 'TikTok Account',
+        url: 'https://www.tiktok.com/@memetank10',
+      },
+      {
+        title: 'Facebook Page',
+        url: 'https://www.facebook.com/memetank10/?ref=pages_you_manage',
+      },
+      {
+        title: 'Twitter Account',
+        url: 'https://twitter.com/MemeTank10',
+      },
+    ],
+    tags: ['Node', 'JavaScript', 'Enterprise APIs', 'OAuth', 'FFMPEG'],
+  },
+  {
     name: 'Gila Hank',
     details:
       "Gila Hank is the student access portal for Eastern Arizona College students. Students can register for classes, view their schedules, apply for dorms, pay fees, apply for scholarships, join clubs, and a lot more. Gila Hank has a ton of functionality and it was a pretty big project. I was the only front-end developer while we created Gila Hank. Unfortunatley you have to login to access Gila Hank so most people can't view the site.",
