@@ -24,7 +24,7 @@ export const Resume = () => {
         <div className={styles.card}>
           <h2>Work Experience</h2>
           <div className={styles.row}>
-            <h4 className={styles.mb}>Frontend Developer</h4>
+            <h4 className={styles.mb}>Full Stack Developer</h4>
             <p className={styles.mt}>Eastern Arizona College · Full-time</p>
             <p className={styles.date}>March 2020 - Present</p>
             <SwitchTransition mode="out-in">
@@ -56,7 +56,7 @@ export const Resume = () => {
             </SwitchTransition>
           </div>
           <div className={styles.row}>
-            <h4 className={styles.mb}>Teacher Assistant</h4>
+            <h4 className={styles.mb}>Full Stack Developer Tutor</h4>
             <p className={styles.mt}>Trilogy Education · Part-time</p>
             <p className={styles.date}>December 2021 - Present</p>
             <SwitchTransition mode="out-in">
