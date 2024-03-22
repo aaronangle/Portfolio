@@ -8,7 +8,17 @@ export const Resume = () => {
   return (
     <>
       <div className={styles.top__svg}>
-        <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style={{ fill: '#eeeeee', width: '100%', height: 95, transform: 'rotate(180deg)' }}>
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1200 120"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{
+            fill: '#eeeeee',
+            width: '100%',
+            height: 95,
+            transform: 'rotate(180deg)',
+          }}
+        >
           <path
             d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
             opacity=".25"
@@ -24,16 +34,24 @@ export const Resume = () => {
         <div className={styles.card}>
           <h2>Work Experience</h2>
           <div className={styles.row}>
-            <h4 className={styles.mb}>Frontend Developer</h4>
+            <h4 className={styles.mb}>Full Stack Developer</h4>
             <p className={styles.mt}>Eastern Arizona College · Full-time</p>
             <p className={styles.date}>March 2020 - Present</p>
             <SwitchTransition mode="out-in">
-              <CSSTransition key={show === 1} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+              <CSSTransition
+                key={show === 1}
+                addEndListener={(node, done) =>
+                  node.addEventListener('transitionend', done, false)
+                }
+                classNames="drop"
+              >
                 {show === 1 ? (
                   <div className="">
                     <p>
-                      Creating, improving, and updating multiple web-based software programs used by staff and students. Managing multiple projects simultaneously. Focusing on the user experience and
-                      ease of use for students and staff.
+                      Creating, improving, and updating multiple web-based
+                      software programs used by staff and students. Managing
+                      multiple projects simultaneously. Focusing on the user
+                      experience and ease of use for students and staff.
                     </p>
                     <div className={styles.badge__row}>
                       <p className={styles.badge}>JavaScript</p>
@@ -47,7 +65,12 @@ export const Resume = () => {
                 ) : (
                   <p className={styles.row__more} onClick={() => setShow(1)}>
                     Show Details
-                    <svg className={styles.row__svg} xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <svg
+                      className={styles.row__svg}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
                       <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                     </svg>
                   </p>
@@ -60,12 +83,23 @@ export const Resume = () => {
             <p className={styles.mt}>Trilogy Education · Part-time</p>
             <p className={styles.date}>December 2021 - Present</p>
             <SwitchTransition mode="out-in">
-              <CSSTransition key={show === 2} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+              <CSSTransition
+                key={show === 2}
+                addEndListener={(node, done) =>
+                  node.addEventListener('transitionend', done, false)
+                }
+                classNames="drop"
+              >
                 {show === 2 ? (
                   <div className="">
                     <p>
-                      Teaching students fundamental web development skills. Breaking down complex problems and technologies into simpler terms for students to understand. Working one on one and in
-                      groups with students to help them understand and complete assignments. Answering a variety of web development questions from students in a clear and concise manner.
+                      Teaching students fundamental web development skills.
+                      Breaking down complex problems and technologies into
+                      simpler terms for students to understand. Working one on
+                      one and in groups with students to help them understand
+                      and complete assignments. Answering a variety of web
+                      development questions from students in a clear and concise
+                      manner.
                     </p>
                     <div className={styles.badge__row}>
                       <p className={styles.badge}>JavaScript</p>
@@ -79,7 +113,12 @@ export const Resume = () => {
                 ) : (
                   <p className={styles.row__more} onClick={() => setShow(2)}>
                     Show Details
-                    <svg className={styles.row__svg} xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <svg
+                      className={styles.row__svg}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
                       <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                     </svg>
                   </p>
@@ -89,15 +128,27 @@ export const Resume = () => {
           </div>
           <div className={styles.row}>
             <h4 className={styles.mb}>Frontend Developer</h4>
-            <p className={styles.mt}>Southeast Directional Drilling · Full-time</p>
+            <p className={styles.mt}>
+              Southeast Directional Drilling · Full-time
+            </p>
             <p className={styles.date}>December 2019 - March 2020</p>
             <SwitchTransition mode="out-in">
-              <CSSTransition key={show === 3} addEndListener={(node, done) => node.addEventListener('transitionend', done, false)} classNames="drop">
+              <CSSTransition
+                key={show === 3}
+                addEndListener={(node, done) =>
+                  node.addEventListener('transitionend', done, false)
+                }
+                classNames="drop"
+              >
                 {show === 3 ? (
                   <div className="">
                     <p>
-                      Improving and expanding an internal web-based software system for Southeast Directional Drilling. Enhancing user interface and user experience, as well as improving and
-                      implementing functionality on the front end of the site. The software tracks drills, schedules, shifts, users, and various other details.
+                      Improving and expanding an internal web-based software
+                      system for Southeast Directional Drilling. Enhancing user
+                      interface and user experience, as well as improving and
+                      implementing functionality on the front end of the site.
+                      The software tracks drills, schedules, shifts, users, and
+                      various other details.
                     </p>
                     <div className={styles.badge__row}>
                       <p className={styles.badge}>JavaScript</p>
@@ -108,7 +159,12 @@ export const Resume = () => {
                 ) : (
                   <p className={styles.row__more} onClick={() => setShow(3)}>
                     Show Details
-                    <svg className={styles.row__svg} xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <svg
+                      className={styles.row__svg}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
                       <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                     </svg>
                   </p>
@@ -129,7 +185,17 @@ export const Resume = () => {
           </div>
         </div>
         <div className={styles.bottom__svg}>
-          <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style={{ fill: '#0f1216', width: '100%', height: 120, transform: 'rotate(180deg)' }}>
+          <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 120"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              fill: '#0f1216',
+              width: '100%',
+              height: 120,
+              transform: 'rotate(180deg)',
+            }}
+          >
             <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
           </svg>
         </div>
